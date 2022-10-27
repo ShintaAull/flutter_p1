@@ -94,6 +94,15 @@ void main() {
   var p = hitungNilai2(mapel1: 50, mapel2: 2);
   print(p);
   hitungNilai3(79, 100);
+
+  //final keyword = imutable/tidak bisa dirubah
+  //const final
+  //const
+  //const String mahasiswa = 'aulia';
+  //final
+  final String mahasiswafk = 'mawar';
+
+  print(mahasiswafk);
 }
 
 //function
