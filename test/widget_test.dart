@@ -103,6 +103,15 @@ void main() {
   final String mahasiswafk = 'mawar';
 
   print(mahasiswafk);
+
+  // null safety
+  // ? ! late
+  //? digunakan dia boleh null
+  late String jurusanns = 'AP';
+
+  //jurusanns = 'perhotelan';
+  //! memaksa untuk dijalankan / yakin ada datanya
+  print(jurusanns.length);
 }
 
 //function
