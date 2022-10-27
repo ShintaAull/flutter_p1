@@ -101,7 +101,11 @@ void main() {
 
   hitungNilai();
   hitungNilai1(75, 90);
-  hitungNilai2(mapel1: 50, mapel2: 80);
+  var t = hitungNilai1(79, 100, 58);
+  print(t);
+  var p = hitungNilai2(mapel1: 50, mapel2: 80);
+  print(p);
+  hitungNilai3(79, 100);
 }
 
 //function
@@ -110,11 +114,30 @@ hitungNilai() {
 }
 
 //positional argument
-hitungNilai1(mapel1, mapel2) {
-  print(mapel1 + mapel2);
+hitungNilai1(mapel1, mapel2, [mapel3]) {
+  var nilaiAkhir;
+  if (mapel3 != null) {
+    nilaiAkhir = mapel1 + mapel2 + mapel3;
+  } else {
+    nilaiAkhir = mapel1 + mapel2;
+  }
+  return nilaiAkhir;
 }
 
 //name argument
 hitungNilai2({mapel1, mapel2}) {
-  print(mapel1 + mapel2);
+  var mapel3;
+  if (mapel3 != null) {
+    var nilaiAkhir = mapel1 + mapel2 + mapel3;
+  } else {
+    var nilaiAkhir = mapel1 + mapel2 + mapel3;
+  }
+  var nilaiAkhir = mapel1 + mapel2;
+  return nilaiAkhir;
+}
+
+//void
+void hitungNilai3(mapel1, mapel2) {
+  var nilaiAkhir = mapel1 + mapel2;
+  print(nilaiAkhir);
 }
