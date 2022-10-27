@@ -79,4 +79,42 @@ void main() {
   print({a < b});
   print({a >= b});
   print({a <= b});
+
+  //conditional
+  print("conditional");
+  var nilai;
+  nilai = 80;
+
+  if (nilai >= 80) {
+    print("A");
+  } else if (nilai <= 80 && nilai >= 50) {
+    print("B");
+  } else {
+    print("tidak lulus");
+  }
+
+  print("..........");
+  nilai >= 80 ? print("A") : print("tidak A");
+
+  //function{
+  print("function");
+
+  hitungNilai();
+  hitungNilai1(75, 90);
+  hitungNilai2(mapel1: 50, mapel2: 80);
+}
+
+//function
+hitungNilai() {
+  print("hitung nilai");
+}
+
+//positional argument
+hitungNilai1(mapel1, mapel2) {
+  print(mapel1 + mapel2);
+}
+
+//name argument
+hitungNilai2({mapel1, mapel2}) {
+  print(mapel1 + mapel2);
 }
